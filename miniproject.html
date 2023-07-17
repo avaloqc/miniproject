@@ -8,6 +8,7 @@
   <title>API mini project</title>
 
   <style>
+
     .container {
       display: flex;
       justify-content: center;
@@ -61,7 +62,7 @@
       outline: 2px solid blue;
       background-color: #0056b3;      
     }
-    
+
   </style>
 </head>
 
@@ -71,14 +72,14 @@
       <h1 class="card-title">CERTO OU FALSO?</h1>
       <div class="card-content">
         <p>PONTUAÇÃO: <span id="score">0</span></p>
-        <p>PERGUNTA:</p>
+        <p id="question-title">PERGUNTA:</p>
         <p id="question"> </p>
       </div>
       <div class="card-button-div">
-        <button id="true" onclick="check_true()" class="card-button">
+        <button id="true" onclick="check_true()" onkeydown="handleKeyDown(event)" class="card-button">
           CERTO
         </button>
-        <button id="true" onclick="check_false()" class="card-button">
+        <button id="false" onclick="check_false()" onkeydown="handleKeyDown(event)" class="card-button">
           FALSO
         </button>
       </div>
@@ -180,6 +181,7 @@
     } else {
       document.getElementById("true").remove();
       document.getElementById("false").remove();
+      document.getElementById("question-title").remove(); 
       document.getElementById("question").innerHTML = "FIN DEL JUEGO";
     }
   }
@@ -203,6 +205,18 @@
     updateUIQuestion();
   }
   setTimeout(starter, 2000);
+
+  function handleKeyDown(event) {
+    if (event.key === "t" || event.key === "T" || event.key === "ArrowLeft") {
+      event.preventDefault();
+      document.getElementById('true').focus()
+    }
+    if (event.key === "f" || event.key === "F" || event.key === "ArrowRight") {
+      event.preventDefault();   
+      document.getElementById('false').focus()    
+    }
+  }
+
 </script>
 
 </html>
