@@ -1,5 +1,5 @@
 
-# Mini Projecto: Manipulação de DOM, consumo de API, Acessibilidade e Usabilidade.
+# Mini Projeto: Manipulação de DOM, consumo de API, Acessibilidade e Usabilidade.
 
 Criação de um SPA com consumo de uma API aberta para praticar JS fetch e manipulação de DOM, considerando também aprimorar a usabilidade e acessibilidade da aplicação. :wheelchair:
 
