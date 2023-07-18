@@ -1,6 +1,8 @@
 
 # Mini Projeto: Manipulação de DOM, consumo de API, Acessibilidade e Usabilidade.
 
+# <div align="center">TRIVIA GAME </div>
+
 Criação de um SPA com consumo de uma API aberta para praticar JS fetch e manipulação de DOM, considerando também aprimorar a usabilidade e acessibilidade da aplicação. :wheelchair:
 
 A aplicação é baseada na atividade número 34 do curso "100 DAYS OF CODE" da _Angela Yu_ (_Udemy_). O código (da minha autoria) cria um jogo de trivia/perguntas "certo ou falso" usando a biblioteca GUI para desktop Tkinter de Python, este foi adaptado para usar DOM manipulation e fetch de JS, criando uma versão web do jogo.
